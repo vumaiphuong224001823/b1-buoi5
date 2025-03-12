@@ -1,225 +1,66 @@
-
-    * {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    text-align: center;
 }
-.menu-ngang {
-    background-color: #2d2f31;
-    padding: 7px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+
+h1 {
+    text-align: center;
+    color: #c957a5;
+    padding: 20px 0;
 }
-.menu-ngang::-webkit-scrollbar {
-    display: none;
-}
-.menu-ngang ul {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    padding: 0 10px;
-}
-.menu-ngang ul li {
-    margin: 0 3px;
-}
-.menu-ngang ul li a {
-    color: white;
+
+a {
+    color: #007bff;
     text-decoration: none;
-    font-size: 14px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-}
-.menu-ngang ul li a.active {
-    background-color: #4CAF50;
-}
-.menu-ngang ul li a:hover {
-    background-color: black;
-}
-.container {
-    display: flex;
-    margin-top: 40px;
-}
-.menu-doc {
-    width: 250px;
-    height: 100vh;
-    background: #f4f4f4;
-    position: fixed;
-    left: 0;
-    top: 50px;
-    overflow-y: auto;
-}
-.menu-doc::-webkit-scrollbar {
-    width: 8px;
-}
-.menu-doc::-webkit-scrollbar-track {
-    background: #ddd;
-}
-.menu-doc::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-.menu-doc h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.menu-doc ul {
-    list-style: none;
-}
-.menu-doc ul li {
-    margin: 5px 0;
-}
-.menu-doc ul li a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.menu-doc ul li a:hover {
-    background-color:lightgrey;
-    color: black;
-}
-.menu-doc ul li a.active {
-    background-color: #4CAF50;
-    color: white;
     font-weight: bold;
 }
-.content {
-    margin-left: 270px;
-    padding: 20px;
-    width: calc(100% - 270px);
-    max-width: 900px;
-    background-color: white;
-}
-.nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-.nav-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #04AA6D;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-.nav-btn:hover {
-            background-color: #037f54;
-        }
-        .example-box {
-            background-color: #f1f1f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .code-box {
-            background-color: #fff;
-            padding: 10px;
-            border-left: 5px solid #04AA6D;
-            font-family: monospace;
-            white-space: pre-wrap; 
-            word-wrap: break-word; 
-            overflow-x: auto;
-        }
-        .example-explained {
-            margin-top: 20px;
-        }
 
-        .highlight {
-            background-color: #ffebeb;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
-            color: red;
-        }
-        .info-box {
-            background-color: #ffffcc;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
-        .box {
-            background: #e6f7e6;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 20px;
+a:hover {
+    text-decoration: underline;
 }
-        .code-box2 {
-            background-color: #f4f4f4;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 5px solid green;
-            font-family: monospace;
-        }
-        .button-container {
-            margin-top: 15px;
-        }
-        .try-button {
-            background-color: #04AA6D;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .try-button:hover {
-            background-color: #038a5c;
-        }
-        .btn {
-            background: #037f54;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: 5px;
+
+p {
+    text-align: center;
+    font-size: 18px;
 }
-        .btn-green {
-            background: #037f54;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius: 5px;
+
+.exercise {
+    background-color: #e7f1e7;
+    border-left: 5px solid #d05cbd;
+    padding: 20px;
+    margin: 20px 0;
 }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .grid div {
-            background-color: #e9ecef;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .grid div:hover {
-            background-color: black;
-            color: white;
-        }
-        .back-home {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: lightblue;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        .back-home:hover {
-            background-color: lightgrey;
-            }
+
+.exercise h2 {
+    color: #333;
+    text-align: center;
+}
+
+.exercise ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exercise li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
